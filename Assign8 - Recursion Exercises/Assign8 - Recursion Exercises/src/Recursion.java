@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Recursion {
     public static void main(String[] args) {
 
@@ -58,4 +61,30 @@ public class Recursion {
         System.out.printf("There are %d organisms in the image.\n", howMany);
 
     }
+    public static boolean isWordSymmetric(String[] words, int start, int end){
+        if (start > end) return true;
+        if (words[start].equals(words[end])){
+            int newStart = start+1;
+            int newEnd = end-1;
+            return isWordSymmetric(words,newStart,newEnd);
+        }
+        return false;
+    }
+
+    public static long arraySum(int[] data, int position){
+        return 0;
+    }
+
+    public static int arrayMin(int[] data, int position){
+        return position;
+    }
+
+    public static double computePyramidWeights(double[][] masses, int row, int column){
+        return 0;
+    }
+
+    public static int howManyOrganisms(char[][] image){
+        return 0;
+    }
+
 }
